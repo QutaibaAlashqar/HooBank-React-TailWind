@@ -11,7 +11,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false); // this is for the toggle
 
   return (
-    <header className="justify-between flex flex-1 py-5 px-55 uppercase hover:bg-white/10 header "> {/* this all are ultiitys form tailwind classes , navbar is a special navbar org.*/}
+    <header className="justify-between flex justify-between py-5 uppercase hover:bg-white/10 header"> {/* this all are ultiitys form tailwind classes , navbar is a special navbar org.*/}
       <img src={logo} alt="hoobank" className=" w-[124px] h-[32px]" />   {/* be carful there is a diffrenet between div and nav, lear how to use it */}
 
       <ul className="list-none sm:flex  justify-end items-center text-dimWhite flex-1"> {/* for the mobile unorederd list <<<i used hidden couse it must be hidden for the mobiles >>>*/}
