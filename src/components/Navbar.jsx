@@ -34,7 +34,7 @@ const Navbar = () => {
       
       <ul className="list-none sm:flex justify-end items-center text-dimWhite">
         <li>
-            <button  onClick={() => navigate('/LogIn')} className="bg-cyan-800 hover:bg-cyan-500 font-bold text-white py-2 px-10 rounded-full">
+            <button  onClick={() => navigate('/LogIn')} className="bg-cyan-800 animate-pulse hover:bg-cyan-500 font-bold text-white py-2 px-10 rounded-full">
                 LogIn
             </button>    
         </li>
