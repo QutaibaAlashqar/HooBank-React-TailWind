@@ -2,9 +2,15 @@ import { features } from "../constants/index"; // here we have the features that
 import styles, { layout } from "../style";
 import Button from "./Button";
 
+//import LogIn from "./logIn";
+//import { Route } from "react-router-dom";
+
+//const root = createRoot(document.getElementById("root"));
+
 
 const FeatureCard = ({ id, icon, title, content }) => (
-<div className={`flex flex-row p-6 rounded-[20px] ${id !== features.length - 1 ? "mb-6" : "mb-0"} feature-card fedaInLeft`}>
+  
+  <div className={`flex flex-row p-6 rounded-[20px] ${id !== features.length - 1 ? "mb-6" : "mb-0"} feature-card fedaInLeft`}>
     <div className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}>
       <img src={icon} alt="star" className="w-[50%] h-[50%] object-contain" />
     </div>
@@ -20,29 +26,34 @@ const FeatureCard = ({ id, icon, title, content }) => (
 );
 
 // this is the main fun here, we add the titles and then the putton after that we do do small icons with its things
-
 const FourArea = () =>  (
-  <section id="features" className={layout.section}> {/*  */}
-    <div  data-aos="fade-right" className={layout.sectionInfo}>
-      <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle {/* for small devices */}
-        the money.
-      </h2>
-      <p data-aos="fade-right" className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
-      </p>
-      
-      <Button styles={`mt-5`} />
-    </div>
 
-    <div data-aos="fade-left" className={`${layout.sectionImg} flex-col`}>     {/* this is for printing the imgs, but we call the function above */}
-      {features.map((feature, index) => (
-        <FeatureCard key={feature.id} {...feature} index={index} />
-      ))}
-    </div>
-  </section>
+  //<BrowserRouter basename="/LogIn">
+    //<Routes>
+      <section id="features" className={layout.section}> 
+        <div  data-aos="fade-right" className={layout.sectionInfo}>
+          <h2 className={styles.heading2}>
+            You do the business, <br className="sm:block hidden" /> we’ll handle {/* for small devices */}
+            the money.
+          </h2>
+          <p data-aos="fade-right" className={`${styles.paragraph} max-w-[470px] mt-5`}>
+            With the right credit card, you can improve your financial life by
+            building credit, earning rewards and saving money. But with hundreds0
+            of credit cards on the market.
+          </p>
+          
+          <Button styles={`mt-5`} />
+          
+        </div>
+
+        <div data-aos="fade-left" className={`${layout.sectionImg} flex-col`}>     {/* this is for printing the imgs, but we call the function above */}
+          {features.map((feature, index) => (
+            <FeatureCard key={feature.id} {...feature} index={index} />
+          ))}
+        </div>
+      </section>
+    //</Routes>
+  //</BrowserRouter>
 );
 
 export default FourArea;

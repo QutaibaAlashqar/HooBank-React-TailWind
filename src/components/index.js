@@ -8,6 +8,8 @@ import ThreeArea from "./ThreeArea";
 import NineArea from "./NineArea";
 import SevenArea from "./SevenArea";
 import TowArea from "./TowArea";
+import GetStartedPage from "./GetStartedPage";
+import LogIn from "./LogIn";
 
 export {
   Navbar,
@@ -19,5 +21,7 @@ export {
   ThreeArea,
   End,
   SevenArea,
-  TowArea
+  TowArea, 
+  GetStartedPage,
+  LogIn
 };
