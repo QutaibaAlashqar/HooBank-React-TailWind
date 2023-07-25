@@ -7,6 +7,7 @@ export default function ContactForm() {
 
   
   const navigate = useNavigate();
+  window.scrollTo(0, 0);
 
 
   return (
