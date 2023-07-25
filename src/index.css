@@ -366,3 +366,12 @@ html {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+.body_login_page {
+  background-image: url(https://img.freepik.com/premium-photo/online-banking-digital-money-technology-conceptual_31965-22271.jpg);
+  background-size: cover;
+}
+
+.login-container_body_login_page {
+  background-color: rgba(200, 200, 200, 0.2); /* Change the last value (0.8) to control the opacity */
+}
