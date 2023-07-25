@@ -375,3 +375,24 @@ html {
 .login-container_body_login_page {
   background-color: rgba(200, 200, 200, 0.2); /* Change the last value (0.8) to control the opacity */
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #07022e;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6d1b10;
+}
