@@ -77,7 +77,7 @@ export default function ContactForm() {
         <div data-aos="flip-up" className="view_over-in">
             
             <img src={card} alt="billing" className="w-[100%] h-[100%] blur_css"/>
-            <button  onClick={() => navigate('/LogIn')} className="btn bg-rose-700 hover:bg-rose-500 font-bold text-white text-xl py-5 px-20 rounded-full btn">
+            <button  onClick={() => navigate('/LogIn')} className="btn bg-rose-700 hover:bg-rose-500 font-bold text-white text-xl py-5 px-20 rounded-full animate-pulse">
                 LogIn
             </button>
         </div>
